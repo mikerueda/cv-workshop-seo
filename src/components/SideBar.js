@@ -9,7 +9,9 @@ export default () => {
 				<span className="portrait">
 					<img alt="Mike" src={image} />
 				</span>
-				<h1>Mike Rueda</h1>
+				<h1>
+					Mike Rueda <span>Front end developer</span>
+				</h1>
 			</header>
 			<PersonalIformation />
 		</aside>

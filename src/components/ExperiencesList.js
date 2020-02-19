@@ -10,15 +10,17 @@ const fetchHeader = {
 const ExperienceItem = ({ data }) => {
 	return (
 		<li className="experienceItem">
-			<h4>
-				<strong>{data.company} </strong>
-				<span>{data.location}</span>
-			</h4>
-			<h5>
-				<strong>{data.role} </strong>
-				<span>{data.date}</span>
-			</h5>
-			{data.description.map((desc, index) => <p key={index}>{desc}</p>)}
+			<article>
+				<h4>
+					<strong>{data.company} </strong>
+					<span>{data.location}</span>
+				</h4>
+				<h5>
+					<strong>{data.role} </strong>
+					<span>{data.date}</span>
+				</h5>
+				{data.description.map((desc, index) => <p key={index}>{desc}</p>)}
+			</article>
 		</li>
 	)
 }
@@ -32,5 +34,12 @@ export default () => {
 		}
 		fetchData()
 	}, [])
-	return <ul>{experiences.map((exp, index) => <ExperienceItem key={index} data={exp} />)}</ul>
+	return (
+		<ul>
+			{experiences.map((exp, index) => (
+				// Pass a index as key for render pourposes
+				<ExperienceItem key={index} data={exp} />
+			))}
+		</ul>
+	)
 }
