@@ -1,0 +1,31 @@
+[
+	{
+		"company": "iúnigo",
+		"location": "Buenos Aires, Argentina",
+		"role": "Front-end Chapter Lead.",
+		"date": "since 10/2017",
+		"description": [
+			"Professional development of team members by the design and implementation of front-end devs career path.",
+			"Devs coordination across different product and business teams guaranteeing delivery quality, code base integrity and good practices.",
+			"Hands on in cross team product problem solutions to support developers needs whenever necesary"
+		]
+	},
+	{
+		"company": "Ego Agency",
+		"location": "Buenos Aires, Argentina",
+		"role": "Lead Front-end Developer.",
+		"date": "02/2017 - 10/2017.",
+		"description": [
+			"Professional development of team members by the design and implementation of front-end devs career path."
+		]
+	},
+	{
+		"company": "Buenos Aires City Government",
+		"location": "Buenos Aires, Argentina",
+		"role": "Front-end Developer.",
+		"date": "09/2016 - 02/2017.",
+		"description": [
+			"Professional development of team members by the design and implementation of front-end devs career path."
+		]
+	}
+]

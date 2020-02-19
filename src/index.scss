@@ -1,0 +1,147 @@
+@import './reset.scss';
+
+$blue: #02a1e3;
+$green: #43a842;
+$grey-text: #5f6160;
+$grey-300: #b2b3b7;
+$grey-200: #e6e6e7;
+$grey-100: #f0f0f1;
+$containerWidth: 920px;
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	background-color: $grey-100;
+	color: $grey-text;
+	font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 300;
+	display: block;
+	strong {
+		font-weight: 700;
+	}
+}
+
+h2,
+h3 {
+	font-size: 24px;
+	margin-bottom: 32px;
+}
+
+strong {
+	font-weight: 700;
+}
+
+.green-text {
+	color: $green;
+}
+.blue-text {
+	color: $blue;
+}
+
+.container {
+	width: 100%;
+	max-width: $containerWidth;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+
+.sidebar {
+	padding: 40px;
+	min-width: 340px;
+	box-sizing: border-box;
+	font-size: 14px;
+	height: 100vh;
+	position: relative;
+	background-color: $grey-200;
+	&:after {
+		display: block;
+		content: '';
+		position: absolute;
+		width: 4px;
+		right: -2px;
+		top: 64px;
+		bottom: 64px;
+		background-color: $grey-300;
+	}
+	&:before {
+		display: block;
+		content: '';
+		background-color: $grey-200;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		bottom: 0px;
+		width: calc(50vw - 460px);
+	}
+}
+
+.portrait {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 16px;
+	display: block;
+	border-radius: 100%;
+	overflow: hidden;
+	img {
+		opacity: 0.7;
+		height: 100%;
+		transform: translate(-20%);
+		filter: grayscale(100%);
+		transition: opacity 0.3s;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+
+.content {
+	padding: 64px 16px 0 64px;
+}
+
+.main-description {
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 64px;
+}
+
+.dotted-lis {
+	li {
+		border-bottom: 1px dotted $grey-text;
+		line-height: 36px;
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+}
+
+.experienceItem {
+	margin-bottom: 32px;
+	border-left: 4px solid $grey-200;
+	padding-left: 16px;
+	h4 {
+		margin-bottom: 8px;
+		color: $green;
+		span {
+			color: $grey-text;
+		}
+	}
+
+	h5 {
+		margin-bottom: 16px;
+		span {
+			font-size: 14px;
+			color: $blue;
+		}
+	}
+
+	p {
+		margin-bottom: 8px;
+		line-height: 22px;
+	}
+}
