@@ -29,7 +29,7 @@ export default () => {
 	const [ experiences, setExperiences ] = useState([])
 	useEffect(() => {
 		const fetchData = async () => {
-			const response = await fetch('/experiences.json', fetchHeader)
+			const response = await fetch('https://api.myjson.com/bins/1bvtgg', fetchHeader)
 			setExperiences(await response.json())
 		}
 		fetchData()

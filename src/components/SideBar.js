@@ -1,13 +1,12 @@
 import React from 'react'
 import PersonalIformation from './PersonalIformation'
-import image from '../assets/mike.jpg'
 
 export default () => {
 	return (
 		<aside className="sidebar">
 			<header>
 				<span className="portrait">
-					<img alt="Mike" src={image} />
+					<img alt="Mike" src='https://picsum.photos/200/200' />
 				</span>
 				<h1>
 					Mike Rueda <span>Front end developer</span>
