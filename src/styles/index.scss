@@ -7,6 +7,7 @@ $grey-300: #b2b3b7;
 $grey-200: #e6e6e7;
 $grey-100: #f0f0f1;
 $containerWidth: 920px;
+$break: 720px;
 
 html,
 body,
@@ -33,13 +34,29 @@ h3 {
 	}
 }
 
+h1 {
+	font-size: 24px;
+	font-weight: bold;
+	word-wrap: none;
+	margin-bottom: 32px;
+	span {
+		font-size: 18px;
+		display: block;
+		font-weight: 100;
+	}
+}
+
 h2,
 h3 {
 	font-size: 24px;
 	margin-bottom: 32px;
+	@media screen and (max-width: $break) {
+		font-size: 18px;
+		margin-bottom: 16px;
+	}
 }
 
-h2{
+h2 {
 	line-height: 28px;
 }
 
@@ -63,6 +80,10 @@ strong {
 	flex-direction: row;
 	padding-left: 340px;
 	box-sizing: border-box;
+	@media screen and (max-width: $break) {
+		flex-direction: column;
+		padding: 0;
+	}
 }
 
 .sidebar {
@@ -71,7 +92,6 @@ strong {
 	min-width: 340px;
 	box-sizing: border-box;
 	font-size: 14px;
-	position: relative;
 	background-color: $grey-200;
 	position: fixed;
 	left: calc(50vw - 460px);
@@ -95,6 +115,22 @@ strong {
 		bottom: 0px;
 		width: calc(50vw - 460px);
 	}
+	@media screen and (max-width: $break) {
+		position: relative;
+		height: auto;
+		left: 0;
+		&::before {
+			content: none;
+		}
+		&:after {
+			left: 40px;
+			right: 40px;
+			width: auto;
+			height: 4px;
+			bottom: -2px;
+			top: auto;
+		}
+	}
 }
 
 .portrait {
@@ -117,6 +153,9 @@ strong {
 
 .content {
 	padding: 64px 16px 0 64px;
+	@media screen and (max-width: $break) {
+		padding: 40px;
+	}
 }
 
 .main-description {
