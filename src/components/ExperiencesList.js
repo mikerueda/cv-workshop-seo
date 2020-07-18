@@ -1,11 +1,4 @@
-import React, { useEffect, useState } from 'react'
-
-const fetchHeader = {
-	headers: {
-		'Content-Type': 'application/json',
-		Accept: 'application/json'
-	}
-}
+import React from 'react'
 
 const ExperienceItem = ({ data }) => {
 	return (
@@ -25,15 +18,7 @@ const ExperienceItem = ({ data }) => {
 	)
 }
 
-export default () => {
-	const [ experiences, setExperiences ] = useState([])
-	useEffect(() => {
-		const fetchData = async () => {
-			const response = await fetch('https://api.myjson.com/bins/1bvtgg', fetchHeader)
-			setExperiences(await response.json())
-		}
-		fetchData()
-	}, [])
+export default ({experiences}) => {
 	return (
 		<ul>
 			{experiences.map((exp, index) => (
