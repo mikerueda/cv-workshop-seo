@@ -1,7 +1,7 @@
 import React from 'react'
 import ExperiencesList from './ExperiencesList'
 
-export default () => {
+export default ({experiences}) => {
 	return (
 		<section className="content">
 			<h2>
@@ -14,7 +14,7 @@ export default () => {
 				work teams.
 			</p>
 			<h3>Recent work</h3>
-			<ExperiencesList />
+			<ExperiencesList experiences={experiences} />
 		</section>
 	)
 }
