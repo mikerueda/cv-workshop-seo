@@ -6633,9 +6633,9 @@ meow@^3.7.0:
     trim-newlines "^1.0.0"
 
 merge-deep@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/merge-deep/-/merge-deep-3.0.2.tgz#f39fa100a4f1bd34ff29f7d2bf4508fbb8d83ad2"
-  integrity sha512-T7qC8kg4Zoti1cFd8Cr0M+qaZfOwjlPDEdZIIPPB2JZctjaPM4fX+i7HOId69tAti2fvO6X5ldfYUONDODsrkA==
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/merge-deep/-/merge-deep-3.0.3.tgz#1a2b2ae926da8b2ae93a0ac15d90cd1922766003"
+  integrity sha512-qtmzAS6t6grwEkNrunqTBdn0qKwFgNWvlxUbAV8es9M7Ot1EbyApytCnvE0jALPa46ZpKDUo527kKiaWplmlFA==
   dependencies:
     arr-union "^3.1.0"
     clone-deep "^0.2.4"
@@ -8390,6 +8390,13 @@ prepend-http@^1.0.0:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc"
   integrity sha1-1PRWKwzjaW5BrFLQ4ALlemNdxtw=
+
+prerender-node@^3.2.5:
+  version "3.2.5"
+  resolved "https://registry.yarnpkg.com/prerender-node/-/prerender-node-3.2.5.tgz#536fc903f1e0141f6a38611ee7bbc23f2d0bf355"
+  integrity sha512-8vV2kXkYp82mgOqNbcQUBEzVEreB0khNxsASiHVRLfK9PR60mHg2m33QHe/TcOrr0XRsBFYK4j8FgmLMah9ZXw==
+  dependencies:
+    request "^2.88.0"
 
 prerender@^5.6.0:
   version "5.6.0"
